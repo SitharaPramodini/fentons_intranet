@@ -1,0 +1,53 @@
+import React from "react";
+import { IoDocumentAttach } from "react-icons/io5";
+import { GoFileDirectoryFill } from "react-icons/go";
+import { TbBulbFilled } from "react-icons/tb";
+import { GiConversation } from "react-icons/gi";
+import { RiCalendarTodoFill } from "react-icons/ri";
+import { LuMonitorCheck } from "react-icons/lu";
+import { SlOrganization } from "react-icons/sl";
+import { GrResources } from "react-icons/gr";
+
+const QuickLinks = () => {
+  const links = [
+    { icon: <IoDocumentAttach className="mx-auto"/>, label: "Documents" },
+    { icon: <GoFileDirectoryFill className="mx-auto"/>, label: "Directory" },
+    { icon: <TbBulbFilled className="mx-auto"/>, label: "Suggestions" },
+    { icon: <GiConversation className="mx-auto"/>, label: "FAQ Center" },
+    { icon: <RiCalendarTodoFill className="mx-auto"/>, label: "Appointments", badge: 5 },
+    { icon: <LuMonitorCheck className="mx-auto"/>, label: "Job Portal", badge: 2 },
+    { icon: <SlOrganization className="mx-auto"/>, label: "Org Chart" },
+    { icon: <GrResources className="mx-auto"/>, label: "Resources" },
+  ];
+
+  return (
+    <div className="w-full relative md:mt-0 mt-4">
+      <h5 className="text-xl font-normal leading-none mb-4 text-[#ff6000] w-full">
+        Quick Links
+      </h5>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {links.map((link, index) => (
+          <div
+            key={index}
+            className="relative text-center bg-white shadow-lg rounded-lg p-4 hover:bg-[#ff6000] hover:text-white transition-all duration-300 ease-in-out group"
+          >
+            {/* Notification Badge */}
+            {link.badge && (
+              <span className="absolute top-0 right-0 -mt-2 -mr-2 bg-red-200 text-[#ff6000] text-xs font-bold px-2 py-1 rounded-full">
+                {link.badge}
+              </span>
+            )}
+
+            <div className="text-[#ff6000] text-4xl mx-auto transition-transform duration-300 ease-[cubic-bezier(0.4, 0, 0.2, 1)] group-hover:rotate-[-15deg] group-hover:scale-125 group-hover:text-white">
+              {link.icon}
+            </div>
+            <p className="text-xs mt-2">{link.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default QuickLinks;

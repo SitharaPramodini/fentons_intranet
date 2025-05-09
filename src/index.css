@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @import "flowbite/dist/flowbite.css"; */
+
+body{
+  background-color: #ecedef;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ecedef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c41218;
+}
+
+
+.scrollable {
+  max-height: 26.5rem; /* Equivalent to max-h-96 */
+  overflow-y: auto;
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+
+.gridwidth{
+  min-width: -webkit-fill-available;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.blinking-button {
+  animation: neonGlow 1.5s infinite;
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 5px #ff6000, 0 0 10px #ff6000, 0 0 15px #ff6000, 0 0 20px #ff6000;
+  }
+  50% {
+    box-shadow: 0 0 10px #ff6000, 0 0 20px #ff6000, 0 0 30px #ff6000, 0 0 40px #ff6000;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff6000, 0 0 10px #ff6000, 0 0 15px #ff6000, 0 0 20px #ff6000;
+  }
+}
+
+.thehover:hover {
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+
+
+
+
+
+.card {
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
+  background-color: #ffffff;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  background: #ff6000;
+  height:220px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.8s ease-out;
+}
+
+.card:hover::before{
+    transition-delay:0.2s ;
+  transform: scale(100);
+}
+
+.card:hover{
+    color: #ffffff;
+.icon{
+  color: #ffffff;
+  transition-delay:0.5s ;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.folder{
+  width: 30%;
+  height: 250px;
+  margin: 2em auto 0em;
+  border-radius: 5px 25px 25px 25px;
+  box-shadow: 3px 4px 11px 0px #00000021;
+  background: white;
+  position: relative;
+}
+
+.folder::before{
+    content:  '';
+    position: absolute;
+    top: -18px;
+    width: 13rem;
+    height: 25px;
+    background: white;
+    border-radius: 25px 0 0 0;
+    clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
+}
+
+.folder::after{
+  content: '';
+  position: absolute;
+  left:  40px;
+  width: 85px;
+  height: 5px;
+  top: -18px;
+  background: #ff6000;
+  border-radius: 0 0 5px 5px;
+
+}
+
+@media (max-width: 768px) {
+  .folder {
+    width: 80%;
+    height: 250px;
+    margin: 2em auto 0em;
+    border-radius: 5px 25px 25px 25px;
+    box-shadow: 3px 4px 11px 0px #00000021;
+    background: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+}
