@@ -5,8 +5,8 @@ const Announcement = () => {
     const announcements = [
         {
             id: 1,
-            title: "Singer Special Event",
-            description: "Join us for the exclusive Singer සත්කාර event featuring special discounts on all premium appliances.",
+            title: "Fentons Special Event",
+            description: "Join us for the exclusive event featuring special discounts on all premium appliances.",
             imageUrl: "announcement.jpg"
         },
         {
@@ -18,13 +18,13 @@ const Announcement = () => {
         {
             id: 3,
             title: "Holiday Season Sale",
-            description: "Celebrate the season with up to 40% off on selected Singer products. Limited time offer.",
+            description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
             // imageUrl: "announcement.jpg"
         },
         {
             id: 4,
             title: "Service Center Updates",
-            description: "We've expanded our service network. Find the nearest Singer service center in your area.",
+            description: "We've expanded our service network. Find the nearest Fentons service center in your area.",
             imageUrl: "announcement.jpg"
         },
         {
@@ -36,7 +36,7 @@ const Announcement = () => {
         {
             id: 3,
             title: "Holiday Season Sale",
-            description: "Celebrate the season with up to 40% off on selected Singer products. Limited time offer.",
+            description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
             // imageUrl: "announcement.jpg"
         },
         {
@@ -48,13 +48,13 @@ const Announcement = () => {
         {
             id: 3,
             title: "Holiday Season Sale",
-            description: "Celebrate the season with up to 40% off on selected Singer products. Limited time offer.",
+            description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
             // imageUrl: "announcement.jpg"
         },
         {
             id: 4,
             title: "Service Center Updates",
-            description: "We've expanded our service network. Find the nearest Singer service center in your area.",
+            description: "We've expanded our service network. Find the nearest Fentons service center in your area.",
             imageUrl: "announcement.jpg"
         },
     ];
@@ -62,7 +62,7 @@ const Announcement = () => {
     return (
         <div className='h-full pb-5'>
             
-            {/* Red button at the top with Singer සත්කාර text */}
+            {/* Red button at the top with text */}
             <h5 class="text-xl font-normal leading-none text-[#ff6000] mb-4">Announcements</h5>
 
             {/* Scrollable area for notification cards */}

@@ -18,8 +18,8 @@ const Header = () => {
         <div className="relative w-full" onClick={closeMenu}>
             <nav className="absolute top-0 left-0 w-full bg-transparent z-10 mt-2">
                 <div className=" flex flex-wrap items-center justify-between mx-auto px-3">
-                    <a href="https://singer.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    </a>
+                    {/* <a href="https://singer.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    </a> */}
                     <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                         <button type="button" className="md:flex hidden items-center text-sm bg-[#ecedef7a] shadow-lg rounded-full md:me-0 focus:ring-4 focus:ring-gray-300" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                             <span className="sr-only">Open user menu</span>
