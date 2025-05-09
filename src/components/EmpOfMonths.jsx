@@ -97,7 +97,7 @@ const EmpOfMonths = () => {
                 <p className="text-gray-600">
                   <span className="text-sm font-medium">Branch: {employee.branch}</span>
                 </p>
-                <div className="mb-1 mt-2">
+                <div className="mb-1">
                   <span className="inline-block bg-orange-100 text-orange-500 py-[2px] px-5 rounded-full text-xs font-medium">
                     Star Performer
                   </span>
