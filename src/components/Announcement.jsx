@@ -5,57 +5,57 @@ const Announcement = () => {
     const announcements = [
         {
             id: 1,
-            title: "Fentons Special Event",
-            description: "Join us for the exclusive event featuring special discounts on all premium appliances.",
-            imageUrl: "announcement.jpg"
+            title: "Hayleys Fentons Celebrates Excellence at CNCI Awards 2024",
+            // description: "Join us for the exclusive event featuring special discounts on all premium appliances.",
+            imageUrl: "announcement2.jpg"
         },
         {
             id: 2,
-            title: "New Product Launch",
-            description: "Discover our latest refrigerator models with advanced cooling technology and energy-saving features.",
+            title: "ARE YOU WEARING YOUR SAFETY HELMET CORRECTLY?",
+            description: "Safety helmets are a critical safeguard against severe head injuries, and their protective function is fully realised only when worn properly.",
             // imageUrl: "announcement.jpg"
         },
         {
             id: 3,
-            title: "Holiday Season Sale",
-            description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
+            title: "Hayleys Family Fun Day - Don't Miss Out!",
+            // description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
             // imageUrl: "announcement.jpg"
         },
         {
             id: 4,
-            title: "Service Center Updates",
-            description: "We've expanded our service network. Find the nearest Fentons service center in your area.",
-            imageUrl: "announcement.jpg"
+            title: "Hayleys Family Shop I Pre-order Your Fresh Veggie Pack Now - Reminder!",
+            // description: "We've expanded our service network. Find the nearest Fentons service center in your area.",
+            imageUrl: "announcement1.jpg"
         },
         {
             id: 2,
-            title: "New Product Launch",
-            description: "Discover our latest refrigerator models with advanced cooling technology and energy-saving features.",
+            title: "Introducing Smart Body Scales",
+            description: "Introducing Smart Body Scales – 30% Off | Exclusive Offer for Hayleys Staff",
             // imageUrl: "announcement.jpg"
         },
         {
             id: 3,
-            title: "Holiday Season Sale",
-            description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
+            title: "Hayleys Sports Awards & Music Night 2025 - Registrations are Closing Tomorrow!",
+            // description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
             // imageUrl: "announcement.jpg"
         },
-        {
-            id: 5,
-            title: "Customer Appreciation Day",
-            description: "Thank you for your loyalty! Join us for special in-store events and exclusive member offers.",
-            // imageUrl: "announcement.jpg"
-        },
-        {
-            id: 3,
-            title: "Holiday Season Sale",
-            description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
-            // imageUrl: "announcement.jpg"
-        },
+        // {
+        //     id: 5,
+        //     title: "Customer Appreciation Day",
+        //     description: "Thank you for your loyalty! Join us for special in-store events and exclusive member offers.",
+        //     // imageUrl: "announcement.jpg"
+        // },
+        // {
+        //     id: 3,
+        //     title: "Holiday Season Sale",
+        //     description: "Celebrate the season with up to 40% off on selected Fentons products. Limited time offer.",
+        //     // imageUrl: "announcement.jpg"
+        // },
         {
             id: 4,
-            title: "Service Center Updates",
-            description: "We've expanded our service network. Find the nearest Fentons service center in your area.",
-            imageUrl: "announcement.jpg"
+            title: "Workplace Safety & Fire Protection Awareness Program ",
+            // description: "We've expanded our service network. Find the nearest Fentons service center in your area.",
+            imageUrl: "announcement3.jpg"
         },
     ];
 
@@ -90,7 +90,7 @@ const Announcement = () => {
                             // Description when no image is present
                             <div className="px-4">
                                 <div className='flex justify-between items-center'>
-                                    <h3 className="text-md font-semibold mb-2">{announcement.title}</h3>
+                                    <h3 className="w-2/3 text-md font-semibold mb-2">{announcement.title}</h3>
                                     <button className="px-4 py-[4px] bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
                                         Read More
                                     </button>

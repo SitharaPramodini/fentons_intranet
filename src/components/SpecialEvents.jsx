@@ -6,33 +6,29 @@ import EmpOfMonths from './EmpOfMonths';
 import { IoPricetagsOutline } from "react-icons/io5";
 
 const birthdayList = [
-    { name: "Sithara Pramodini", department: "Marketing Department", branch: "Add a Wish" },
-    { name: "Sewmini Sandeepa", department: "Finance Department", branch: "Add a Wish" },
-    { name: "Pramod Ranaweera", department: "HR Department", branch: "Add a wish" }
+    { name: "Sithara Pramodini", department: "Fentons IT", branch: "Fentons IT", img:"sithara.jpeg" },
+    { name: "Pawani Maheshika", department: "Solar division", branch: "Solar", img:"pawani.jpeg" },
+    { name: "Sachini Ranaweera", department: "Fentons IT", branch: "Fentons IT", img:"sachini.jpeg" }
 ];
 
 const anniversaryList = [
-    { name: "Sithara Pramodini", department: "Marketing Department", branch: "2 years" },
-    { name: "Sewmini Sandeepa", department: "Finance Department", branch: "5 years" },
-    { name: "Pramod Ranaweera", department: "HR Department", branch: "1 year" }
+    { name: "Sithara Pramodini", department: "Fentons IT", branch: "2 Years", img:"sithara.jpeg" },
+    { name: "Pawani Maheshika", department: "Solar division", branch: "5 Years", img:"pawani.jpeg" },
+    { name: "Sachini Ranaweera", department: "Fentons IT", branch: "3 Years", img:"sachini.jpeg" }
 ];
 
-const newBornList = [
-    { name: "Sithara Pramodini", department: "Marketing Department", branch: "Main branch" },
-    { name: "John Doe", department: "Finance Department", branch: "Head Office" },
-    { name: "Jane Smith", department: "HR Department", branch: "Regional Office" }
+const internationalDays = [
+    { name: "Women's Day", img: "day1.jpg", branch: "7th March"},
 ];
 
 const festGreetingList = [
-    { name: "Sithara Pramodini", department: "Wishing you joy and prosperity this festive season! May your celebrations be filled with happiness and success. ✨🎉", branch: "Reply" },
-    { name: "Sewmini Sandeepa", department: "May this festival bring you happiness, peace, and success. Enjoy the celebrations! 🎊✨", branch: "Reply" },
-    { name: "Pramod Ranaweera", department: "Wishing you a season of joy, laughter, and cherished moments. Happy festivities! 🎉🎶", branch: "Reply" }
+    { name: "Sinhala and Tamil New Year", department: "Happy sinhala and tamil new year ✨🎉", branch: "Reply", img: "fest.jpg"},
 ];
 
 const eventData = [
-    { id: 1, icon: <LiaBirthdayCakeSolid className="icon text-3xl text-[#ff6000]" />, title: "Today Birthdays", count: 6, list: birthdayList },
-    { id: 2, icon: <GrTrophy className="icon text-2xl ml-2 text-[#ff6000]" />, title: "Work Anniversary", count: 20, list: anniversaryList },
-    { id: 3, icon: <IoPricetagsOutline className="icon text-2xl ml-2 text-[#ff6000]" />, title: "International Days", count: 4, list: newBornList },
+    { id: 1, icon: <LiaBirthdayCakeSolid className="icon text-3xl text-[#ff6000]" />, title: "Today Birthdays", count: 3, list: birthdayList },
+    { id: 2, icon: <GrTrophy className="icon text-2xl ml-2 text-[#ff6000]" />, title: "Work Anniversary", count: 3, list: anniversaryList },
+    { id: 3, icon: <IoPricetagsOutline className="icon text-2xl ml-2 text-[#ff6000]" />, title: "International Days", count: 2, list: internationalDays },
     { id: 4, icon: <MdOutlineFestival className="icon text-2xl ml-2 text-[#ff6000]" />, title: "Festival Greetings", count: 2, list: festGreetingList }
 ];
 
@@ -70,7 +66,7 @@ const SpecialEvents = () => {
                                     <li key={index} className="py-3 sm:py-4">
                                         <div className="flex items-center">
                                             <div className="shrink-0">
-                                                <img src='emp.jpg' className="w-8 h-8 rounded-full" alt="Profile" />
+                                                <img src={emp.img} className="w-10 h-10 rounded-full object-cover" alt="Profile" />
                                             </div>
                                             <div className="flex-1 min-w-0 ms-4">
                                                 <p className="text-sm font-medium text-gray-900 truncate">{emp.name}</p>
