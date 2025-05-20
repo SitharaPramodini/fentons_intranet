@@ -22,13 +22,14 @@ import { RiBankLine } from "react-icons/ri";
 const QuickLinks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedLink, setSelectedLink] = useState(null);
-
+  
   const links = [
     { 
       icon: <FaHandHoldingDollar className="mx-auto"/>, 
       label: "Finance",
       badge: 1,
-      content: "Access all services provided by our organization."
+      content: "Access all services provided by our organization.",
+      id: "finance" // Identifier for the Finance card
     },
     { 
       icon: <FaUsers className="mx-auto"/>, 
@@ -68,12 +69,15 @@ const QuickLinks = () => {
       content: "Find learning resources, training materials, and tools to help you succeed in your role."
     },
   ];
-
+  
   const openModal = (link) => {
-    setSelectedLink(link);
-    setIsModalOpen(true);
+    // Only open modal for the Finance card
+    if (link.id === "finance") {
+      setSelectedLink(link);
+      setIsModalOpen(true);
+    }
   };
-
+  
   const closeModal = () => {
     setIsModalOpen(false);
     // Reset selected link after animation completes
@@ -81,13 +85,12 @@ const QuickLinks = () => {
       setSelectedLink(null);
     }, 300);
   };
-
+  
   return (
     <div className="w-full relative md:mt-0 mt-4">
       <h5 className="text-xl font-normal leading-none mb-4 text-orange-500 w-full">
         Quick Links
       </h5>
-
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {links.map((link, index) => (
           <div
@@ -101,7 +104,6 @@ const QuickLinks = () => {
                 {link.badge}
               </span>
             )}
-
             <div className="text-orange-500 text-4xl mx-auto transition-transform duration-300 ease-out group-hover:rotate-[-15deg] group-hover:scale-125 group-hover:text-white">
               {link.icon}
             </div>
@@ -109,7 +111,7 @@ const QuickLinks = () => {
           </div>
         ))}
       </div>
-
+      
       {/* Modal Overlay */}
       {isModalOpen && (
         <div 
@@ -118,7 +120,7 @@ const QuickLinks = () => {
         >
           {/* Modal Content */}
           <div 
-            className={`bg-white rounded-lg shadow-xl w-[60%] overflow-hidden transform transition-all duration-300 animate-modal-pop ${isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
+            className={`bg-white rounded-lg shadow-xl w-full md:w-[60%] overflow-hidden transform transition-all duration-300 animate-modal-pop ${isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
             onClick={(e) => e.stopPropagation()}
           >
             {selectedLink && (
@@ -143,55 +145,47 @@ const QuickLinks = () => {
                 
                 {/* Modal Body */}
                 <div className="p-6">
-                  {/* <p className="text-gray-700 mb-4">{selectedLink.content}</p> */}
-                  
                   {/* Cards Grid in the style from the image */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {[
                       {
                         icon: <MdCardTravel className="text-2xl" />,
                         title: "Job Opening",
-                        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
                       },
                       {
                         icon: <MdFlight className="text-2xl" />,
-                        title: "travel document",
-                        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
+                        title: "Travel Document",
                       },
                       {
                         icon: <RiBankLine className="text-2xl" />,
-                        title: "bank garantee",
-                        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
+                        title: "Bank Guarantee",
                       },
                       {
                         icon: <LuBadgeCheck className="text-2xl" />,
-                        title: "warranty",
-                        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
+                        title: "Warranty",
                       },
                       {
                         icon: <MdFlight className="text-2xl" />,
-                        title: "travel document",
-                        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
+                        title: "Travel Document",
                       },
                       {
                         icon: <MdCardTravel className="text-2xl" />,
                         title: "Job Opening",
-                        // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
                       }
                     ].map((card, index) => (
                       <div key={index} className="bg-gray-100 rounded-lg p-5 relative hover:shadow-md transition-shadow border-2 border-gray-200">
-                        {/* orange 5ccent bar */}
+                        {/* orange accent bar */}
                         <div className="absolute left-0 top-5 h-[40%] ml-[-7px] w-[0.4rem] bg-orange-500 rounded-l-lg"></div>
                         
                         {/* Card content */}
                         <div className="pl-3">
                           <div className="bg-white p-3 rounded-full inline-block">
-                            <div className="text-orange-500 ">{card.icon}</div>
+                            <div className="text-orange-500">{card.icon}</div>
                           </div>
-                          <h3 className="text-sm font-medium">{card.title}</h3>
-                          <a className="inline-flex items-center text-xs text-gray-600 hover:text-gray-800">
+                          <h3 className="text-sm font-medium mt-2">{card.title}</h3>
+                          <a className="inline-flex items-center text-xs text-gray-600 hover:text-gray-800 mt-1">
                             Learn more 
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-6 ml-1 text-orange-500 " viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-6 ml-1 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
                               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
                           </a>
@@ -209,7 +203,6 @@ const QuickLinks = () => {
                     </div>
                   )}
                 </div>
-                
               </>
             )}
           </div>
