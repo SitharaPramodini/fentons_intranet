@@ -64,7 +64,7 @@ const NewJoinees = () => {
   return (
     <div>
       <div className="w-full h-[11rem] relative pt-4 px-6 bg-white border border-gray-200 rounded-lg shadow-sm gridwidth">
-        <div className="flex justify-center mb-2 items-center">
+        <div className="flex justify-center items-center">
           <h5 className="text-xl font-normal leading-none text-gray-400 pt-[0.35rem] h-8 border-r-2 border-gray-300 pr-6">20</h5>
           <h5 className="text-xl font-normal leading-none text-[#ff6000] pl-6">New Comers of The Month</h5>
         </div>
