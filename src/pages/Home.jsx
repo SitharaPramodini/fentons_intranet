@@ -8,24 +8,35 @@ import SpecialEvents from '../components/SpecialEvents'
 import NewJoinees from '../components/NewJoinees'
 import Promotions from '../components/Promotions'
 import Footer from '../components/Footer'
+import FrequentQuickLinks from '../components/FrequentQuickLinks'
 
 const Home = () => {
     return (
-        <div className=''>
-            <Header />
-
+        <div className='flex flex-col'>
+            
+<Header />
             <div className='flex md:flex-row flex-col w-full px-6 gap-x-4 pt-6'>
-                <div className='md:w-1/3 w-full'>
+
+                <div className='md:w-1/4 w-full'>
                     <Announcement />
                 </div>
 
-                <div className='md:w-1/3 w-full'>
-                    <SpecialEvents />
+                <div className='md:w-1/4 w-full flex flex-col gap-y-5'>
+                    <FrequentQuickLinks />
+                    <EmpOfMonths />
                 </div>
 
-                <div className='flex flex-col md:w-1/3 w-full gap-y-4'>
+                <div className='flex flex-col md:w-2/4 w-full gap-y-4'>
                     <QuickLinks />
-                    <NewJoinees />
+                    <div className='flex justify-between gap-4'>
+                        <div className='w-1/2'>
+                            <SpecialEvents />
+                        </div>
+                        <div className='w-1/2'>
+                            <NewJoinees />
+                        </div>
+                    </div>
+
                 </div>
 
                 {/* <div className="flex flex-col w-2/3 gap-y-4">

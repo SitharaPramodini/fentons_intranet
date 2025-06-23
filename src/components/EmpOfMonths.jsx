@@ -27,21 +27,21 @@ const EmpOfMonths = () => {
     {
       id: 4,
       name: "Ridmi Jayasekara",
-      branch: "Galle Branch",
+      branch: "Solar",
       description: "Recognized for outstanding performance",
       image: "ridmi.jpeg"
     },
     {
       id: 5,
       name: "Sachini Ranaweera",
-      branch: "Negombo Branch",
+      branch: "FIT",
       description: "Recognized for outstanding performance",
       image: "sachini.jpeg"
     },
     {
       id: 6,
       name: "Sithara Pramodini",
-      branch: "Jaffna Main",
+      branch: "FIT",
       description: "Recognized for outstanding performance",
       image: "sithara.jpeg"
     }
@@ -86,14 +86,14 @@ const EmpOfMonths = () => {
 
   return (
     <div 
-      className="relative h-36 w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-101 transition-all duration-300 ease-in-out"
+      className="relative h-40 w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-101 transition-all duration-300 ease-in-out"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Left Arrow */}
       <button 
         onClick={handlePrevious}
-        className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full p-2 z-10 hover:bg-gray-100"
+        className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full p-2 z-10 hover:bg-[#f3f4f6a1]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 opacity-50 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -124,7 +124,7 @@ const EmpOfMonths = () => {
                   <h3 className="text-base font-semibold">{employee.name}</h3>
                   <p className="py-1 pr-6 text-xs">{employee.description}</p>
                   <p className="text-gray-600">
-                    <span className="text-xs font-medium">Branch: {employee.branch}</span>
+                    <span className="text-xs font-medium">Department: {employee.branch}</span>
                   </p>
                   <div className="mb-1">
                     <span className="inline-block bg-orange-100 text-orange-500 py-0.5 px-5 rounded-full text-xs font-medium">
@@ -141,7 +141,7 @@ const EmpOfMonths = () => {
       {/* Right Arrow */}
       <button 
         onClick={handleNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full p-2 z-10 hover:bg-gray-100"
+        className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full p-2 z-10 hover:bg-[#f3f4f6a1]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 opacity-50 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

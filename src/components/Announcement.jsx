@@ -90,12 +90,12 @@ const Announcement = () => {
                             // Description when no image is present
                             <div className="px-4">
                                 <div className='flex justify-between items-center'>
-                                    <h3 className="w-2/3 text-md font-semibold mb-2">{announcement.title}</h3>
+                                    <h3 className="w-3/5 text-sm font-semibold mb-2">{announcement.title}</h3>
                                     <button className="px-4 py-[4px] bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
                                         Read More
                                     </button>
                                 </div>
-                                <p className="text-gray-600 text-sm">{announcement.description}</p>
+                                <p className="text-gray-600 text-xs">{announcement.description}</p>
                             </div>
                         )}
                     </div>

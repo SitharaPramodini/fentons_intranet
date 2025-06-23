@@ -57,10 +57,10 @@ const Documents = () => {
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm font-medium text-gray-900 truncate ">
-                                Travel Policy
+                                Expense Reimbursement Policy
                                 </p>
                                 <p class="text-xs text-gray-500 truncate ">
-                                Rules for business travel and expense coverage.                                </p>
+                                Rules for claiming work-related expenses.                                </p>
                             </div>
                             <button className="inline-flex items-center px-6 py-2 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
                                 <FaDownload />
@@ -74,10 +74,10 @@ const Documents = () => {
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm font-medium text-gray-900 truncate ">
-                                Expense Reimbursement Policy
+                                Travel Policy
                                 </p>
                                 <p class="text-xs text-gray-500 truncate ">
-                                Rules for claiming work-related expenses.                                </p>
+                                Rules for business travel and expense coverage.                                </p>
                             </div>
                             <button className="inline-flex items-center px-6 py-2 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
                                 <FaDownload />

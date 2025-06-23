@@ -63,15 +63,15 @@ const NewJoinees = () => {
 
   return (
     <div>
-      <div className="w-full h-[11rem] relative pt-4 px-6 bg-white border border-gray-200 rounded-lg shadow-sm gridwidth">
+      <div className="w-full h-[12.28rem] relative pt-4 px-4 bg-white border border-gray-200 rounded-lg shadow-sm gridwidth">
         <div className="flex justify-center items-center">
-          <h5 className="text-xl font-normal leading-none text-gray-400 pt-[0.35rem] h-8 border-r-2 border-gray-300 pr-6">20</h5>
-          <h5 className="text-xl font-normal leading-none text-[#ff6000] pl-6">New Comers of The Month</h5>
+          <h5 className="text-sm font-normal leading-none text-gray-400 pt-[0.45rem] h-8 border-r-2 border-gray-300 pr-3">4</h5>
+          <h5 className="text-sm font-normal leading-none text-[#ff6000] pl-3">New Comers of The Month</h5>
         </div>
         <div className="flow-root">
           <ul
             role="list"
-            className="divide-y divide-gray-200 pb-4 h-[8rem] overflow-y-auto custom-scrollbar"
+            className="divide-y divide-gray-200 pb-4 h-[9rem] overflow-y-auto custom-scrollbar"
           >
             {newJoineesData.employees.map((employee) => (
               <li key={employee.id} className="py-2 sm:py-3">
@@ -88,9 +88,9 @@ const NewJoinees = () => {
                       {employee.department}
                     </p>
                   </div>
-                  <button className="inline-flex mr-4 items-center px-4 py-1 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
+                  {/* <button className="inline-flex mr-4 items-center px-4 py-1 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
                     {employee.branch}
-                  </button>
+                  </button> */}
                 </div>
               </li>
             ))}
