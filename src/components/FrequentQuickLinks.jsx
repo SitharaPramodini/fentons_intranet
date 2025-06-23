@@ -44,7 +44,7 @@ const FrequentQuickLinks = () => {
     { 
       icon: <MdOutlineInventory2 className="mx-auto"/>, 
       label: "Travel Document",
-      url: "https://fentonsit.lk/kingsbury/",
+      url: "https://apps.hayleysfentons.com/travel-system/employee/dashboard.php",
       content: "Find answers to commonly asked questions about policies, procedures, and company resources."
     },
     // { 
