@@ -183,7 +183,7 @@ const QuickLinks = () => {
                       },
                       {
                         icon: <GiOpenBook className="text-2xl" />,
-                        title: "Reciting",
+                        title: "Recepting",
                         url: "https://demo.secretary.lk/finance/cheque/cheque_deposit_slip.php"
                       }
                     ].map((card, index) => {

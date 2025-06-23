@@ -139,7 +139,7 @@ const handleLogin = () => {
         </div>
       </div>
             </div>
-            <div className="container"></div>
+            <div className="bg-container"></div>
             <div className={`modal ${isOpened ? 'is-open' : ''}`}>
                 <div className="modal-container">
                     <div className="modal-left">

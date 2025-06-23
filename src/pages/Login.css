@@ -6,7 +6,7 @@
 	 font-family: "Nunito", sans-serif;
 	 color: rgba(0, 0, 0, 0.7);
 }
- .container {
+ .bg-container {
 	 height: 200vh;
      background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.589)), url('bg.jpg');
 	 background-size: cover;
