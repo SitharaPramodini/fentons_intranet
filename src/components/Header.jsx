@@ -183,7 +183,7 @@ const Header = () => {
 
                 {/* Static Top Layer with Angled Cut */}
                 <div 
-                    className="relative z-10 w-1/3 bg-[#ecedef] flex items-center justify-center h-full min-h-[134px]"
+                    className="relative z-10 w-1/3 bg-[#ffffff] border-b-4 border-[#1c7241] flex items-center justify-center h-full min-h-[134px]"
                     style={{
                         clipPath: 'polygon(0 0, 70% 0, 100% 100%, 0 100%)'
                     }}

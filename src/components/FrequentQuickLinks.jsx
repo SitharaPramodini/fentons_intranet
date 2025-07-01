@@ -79,19 +79,19 @@ const FrequentQuickLinks = () => {
   
   return (
     <div className="w-full relative md:mt-0 mt-4">
-      <h5 className="text-xl font-normal leading-none mb-4 text-orange-500 w-full">
-        Popular Shortcuts
+      <h5 class="text-xl font-normal leading-none text-[#ff6000] mb-4">
+        Frequently Access
       </h5>
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-4 bg-orange-200 rounded-lg p-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
   {links.map((link, index) => {
     const card = (
       <div
         onClick={() => openModal(link)}
-        className="relative text-center bg-white shadow-lg rounded-lg p-4 hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out group cursor-pointer"
+        className="relative text-center bg-white shadow-lg rounded-lg p-4 hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out group cursor-pointer "
       >
         {/* Notification Badge */}
         {link.badge && (
-          <span className="absolute top-0 right-0 -mt-2 -mr-2 bg-orange-100 text-orange-500 text-xs font-bold px-2 py-1 rounded-full group-hover:bg-white">
+          <span className="absolute top-0 right-0 -mt-2 -mr-2 bg-[#31c48d29] text-orange-500 text-xs font-bold px-2 py-1 rounded-full group-hover:bg-white">
             {link.badge}
           </span>
         )}

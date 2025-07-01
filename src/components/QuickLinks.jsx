@@ -93,7 +93,7 @@ const QuickLinks = () => {
 
   return (
     <div className="w-full relative md:mt-0 mt-4">
-      <h5 className="text-xl font-normal leading-none mb-4 text-orange-500 w-full">
+      <h5 class="text-xl font-normal leading-none text-[#ff6000] mb-4">
         Quick Links
       </h5>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -105,7 +105,7 @@ const QuickLinks = () => {
           >
             {/* Notification Badge */}
             {link.badge && (
-              <span className="absolute top-0 right-0 -mt-2 -mr-2 bg-orange-100 text-orange-500 text-xs font-bold px-2 py-1 rounded-full group-hover:bg-white">
+              <span className="absolute top-0 right-0 -mt-2 -mr-2 bg-[#31c48d29] text-orange-500 text-xs font-bold px-2 py-1 rounded-full group-hover:bg-white">
                 {link.badge}
               </span>
             )}

@@ -88,7 +88,7 @@ const NewJoinees = () => {
                       {employee.department}
                     </p>
                   </div>
-                  {/* <button className="inline-flex mr-4 items-center px-4 py-1 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
+                  {/* <button className="inline-flex mr-4 items-center px-4 py-1 bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
                     {employee.branch}
                   </button> */}
                 </div>

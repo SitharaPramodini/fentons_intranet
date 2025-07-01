@@ -55,7 +55,7 @@ const SpecialEvents = () => {
 
     return (
         <div ref={containerRef} className="w-full max-w-sm bg-transparent "> {/*gridwidth*/}
-            <h5 className="text-xl font-normal leading-none text-[#ff6000] mb-4">Celebrations</h5>
+                  <h5 class="text-xl font-normal leading-none text-[#ff6000] mb-4">Celebrations</h5>
             {/* <EmpOfMonths /> */}
             <ul className="space-y-2 relative mt-3">
                 {eventData.map(event => (
@@ -66,7 +66,7 @@ const SpecialEvents = () => {
                         >
                             {event.icon}
                             <span className="flex-1 ms-8 whitespace-nowrap text-left font-medium text-sm">{event.title}</span>
-                            <span className="px-4 py-[4px] bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
+                            <span className="px-4 py-[4px] bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
                                 {event.count}
                             </span>
                         </button>
@@ -84,7 +84,7 @@ const SpecialEvents = () => {
                                                     <p className="text-sm font-medium text-gray-900 truncate">{emp.name}</p>
                                                     <p className="text-xs text-gray-500 truncate">{emp.department}</p>
                                                 </div>
-                                                <button className="inline-flex items-center px-4 py-1 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
+                                                <button className="inline-flex items-center px-4 py-1 bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-xs font-medium transition-colors duration-200">
                                                     {emp.branch}
                                                 </button>
                                             </div>

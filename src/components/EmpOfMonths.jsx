@@ -85,11 +85,16 @@ const EmpOfMonths = () => {
   }, [isPaused, handleNext]);
 
   return (
+    <div>
+                        <h5 class="text-xl font-normal leading-none text-[#ff6000] mb-4">Performance</h5>
+
+
     <div 
       className="relative h-40 w-full bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-xl hover:scale-101 transition-all duration-300 ease-in-out"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
+      
       {/* Left Arrow */}
       <button 
         onClick={handlePrevious}
@@ -127,7 +132,7 @@ const EmpOfMonths = () => {
                     <span className="text-xs font-medium">Department: {employee.branch}</span>
                   </p>
                   <div className="mb-1">
-                    <span className="inline-block bg-orange-100 text-orange-500 py-0.5 px-5 rounded-full text-xs font-medium">
+                    <span className="inline-block bg-[#31c48d29] text-orange-500 py-0.5 px-5 rounded-full text-xs font-medium">
                       Star Performer
                     </span>
                   </div>
@@ -162,6 +167,7 @@ const EmpOfMonths = () => {
         ))}
       </div>
     </div>
+        </div>
   );
 };
 

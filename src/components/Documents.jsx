@@ -27,7 +27,7 @@ const Documents = () => {
                                     Company policies and guidelines.
                                 </p>
                             </div>
-                            <button className="inline-flex items-center px-6 py-2 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
+                            <button className="inline-flex items-center px-6 py-2 bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
                                 <FaDownload />
                             </button>
                         </div>
@@ -45,7 +45,7 @@ const Documents = () => {
                                 Standards for ethical behavior and workplace expectations.
                                 </p>
                             </div>
-                            <button className="inline-flex items-center px-6 py-2 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
+                            <button className="inline-flex items-center px-6 py-2 bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
                                 <FaDownload />
                             </button>
                         </div>
@@ -62,7 +62,7 @@ const Documents = () => {
                                 <p class="text-xs text-gray-500 truncate ">
                                 Rules for claiming work-related expenses.                                </p>
                             </div>
-                            <button className="inline-flex items-center px-6 py-2 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
+                            <button className="inline-flex items-center px-6 py-2 bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
                                 <FaDownload />
                             </button>
                         </div>
@@ -79,7 +79,7 @@ const Documents = () => {
                                 <p class="text-xs text-gray-500 truncate ">
                                 Rules for business travel and expense coverage.                                </p>
                             </div>
-                            <button className="inline-flex items-center px-6 py-2 bg-orange-100 hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
+                            <button className="inline-flex items-center px-6 py-2 bg-[#31c48d29] hover:bg-[#ff6000] hover:text-white rounded-full text-orange-500 text-sm font-medium transition-colors duration-200">
                                 <FaDownload />
                             </button>
                         </div>
