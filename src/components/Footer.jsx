@@ -43,19 +43,19 @@ const Footer = () => {
             </div>
         </nav> */}
         <div class="flex justify-center items-center space-x-6">
-            <a href="https://x.com/fentonshayleys?lang=en" class="text-[#ff6000] hover:text-orange-500">
+            <a href="#" class="text-[#ff6000] hover:text-orange-500">
                 <img src='logo.webp' class="h-12" />
             </a>
-            <a href="https://x.com/fentonshayleys?lang=en" class="text-[#ff6000] hover:text-orange-500">
+            <a href="#" class="text-[#ff6000] hover:text-orange-500">
                 <img src='energy.png' class="h-10" />
             </a>
-            <a href="https://x.com/fentonshayleys?lang=en" class="text-[#ff6000] hover:text-orange-500">
+            <a href="#" class="text-[#ff6000] hover:text-orange-500">
                 <img src='elec.png' class="h-10" />
             </a>
-            <a href="https://x.com/fentonshayleys?lang=en" class="text-[#ff6000] hover:text-orange-500">
+            <a href="#" class="text-[#ff6000] hover:text-orange-500">
                 <img src='fsf.png' class="h-10" />
             </a>
-            <a href="https://x.com/fentonshayleys?lang=en" class="text-[#ff6000] hover:text-orange-500">
+            <a href="#" class="text-[#ff6000] hover:text-orange-500">
                 <img src='nexgen.png' class="h-14" />
             </a>
         </div>
