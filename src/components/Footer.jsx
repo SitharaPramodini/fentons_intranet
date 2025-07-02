@@ -44,7 +44,7 @@ const Footer = () => {
         </nav> */}
         <div class="flex justify-center items-center space-x-6">
             <a href="#" class="text-[#ff6000] hover:text-orange-500">
-                <img src='logo.webp' class="h-12" />
+                <img src='solar.webp' class="h-9" />
             </a>
             <a href="#" class="text-[#ff6000] hover:text-orange-500">
                 <img src='energy.png' class="h-10" />
